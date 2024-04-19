@@ -30,3 +30,25 @@ function loginUserMessaege(username) {
 
 console.log(loginUserMessaege("John")); // John just logged in
 console.log(loginUserMessaege()); // in JavaScript, if a function is called without an argument, the parameter will be undefined
+
+console.log("REST OPERATOR & SPREAD OPERATOR");
+function calculateCartPrice(...num01) {
+  // Rest Operator: ...num01 => when we add ... before the parameter, it will take all the arguments and put them in an array
+  return num01;
+}
+
+console.log(calculateCartPrice(10, 10, 30, 40, 50)); // 10
+
+const user = {
+  userName: "John",
+  price: 100,
+};
+
+function handleObject(anyobject) {
+  console.log(
+    `Username is ${anyobject.userName} and price is ${anyobject.price}`
+  );
+  return;
+}
+
+console.log(handleObject(user));
