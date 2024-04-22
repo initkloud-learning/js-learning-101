@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #212121;
+  color: azure;
+}
+.container {
+  width: 60%;
+  margin: 10% auto;
+  text-align: center;
+  border: 1px solid #a09745;
+  padding: 1rem 0;
+}
+
+.container h1 {
+  font-size: 3rem;
+  margin-bottom: 0.2rem;
+  color: #a09745;
+}
+
+.container p {
+  font-size: 1.1rem;
+  margin: 1rem 0;
+  padding: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+label {
+  font-size: 1.8rem;
+  margin: 0.5rem 0;
+  color: #a09745;
+}
+
+input {
+  width: 20%;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.guessSubmit {
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.guessSubmit:hover,
+.guessSubmit:active {
+  background-color: #a09745;
+}
+
+#previousGuesses {
+  font-size: 1.5rem;
+  margin: 1rem auto;
+  border: #ccc 1px solid;
+  width: 60%;
+  padding: 1rem;
+  display: none;
+}
+
+#lowOrHigh {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  color: #a09745;
+}
+
+.resultParas {
+  text-align: center;
+}
+
+.button {
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin: 0 auto;
+  width: 20%;
+}
+
+.button:hover {
+  color: green;
+}

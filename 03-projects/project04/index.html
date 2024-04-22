@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Gussing | initkloud</title>
+  </head>
+  <link rel="stylesheet" href="./style.css">
+  <body>
+    <div class="container">
+      <h1>Number Guessing Game</h1>
+      <p>Guess a number between 1 and 100.</p>
+      <p>You have 10 attempts to guess the number.</p>
+      <form>
+            <label for="guessNumberInput">Guess a Number</label>
+            <input type="number" id="guessNumberInput" />
+            <input type="button" value="Submit guess" class="guessSubmit" id="submit">
+      </form>
+        <div class="resultParas">
+            <div>
+                <p>Previous Guesses</p>
+                <p id="previousGuesses""></p>
+            </div>
+            <div>
+                <p>Guesses Remaining: <span id="lastResult">10</span></p>
+            </div>
+            <div>
+                <p><span id="lowOrHigh"></span></p>
+            </div>
+        </div>
+    </div>
+
+      <script src="./guessNumber.js"></script>
+  </body>
+</html>
