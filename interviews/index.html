@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>stop propogation</title>
+  </head>
+  <body>
+    <ul>
+      <li>
+        <img
+          src="https://images.unsplash.com/photo-1548013146-72479768bada?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt=""
+          width="256px"
+        />
+      </li>
+      <li>
+        <img
+          src="https://images.unsplash.com/photo-1519802772250-a52a9af0eacb?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt=""
+          width="256px"
+        />
+      </li>
+      <li>
+        <img
+          src="https://images.unsplash.com/photo-1463592177119-bab2a00f3ccb?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt=""
+          width="256px"
+          id="initkloud"
+        />
+      </li>
+      <li>
+        <img
+          src="https://images.unsplash.com/photo-1581836850314-3b668c2aa540?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt=""
+          width="256px"
+        />
+      </li>
+    </ul>
+  </body>
+  <script>
+    document.querySelector("ul").addEventListener("click", function (event){
+      console.log("ul clicked")
+    })
+    document.querySelector("#initkloud").addEventListener("click", function(event){
+      event.stopPropagation()
+      console.log("initkloud clicked")
+    })
+  </script>
+</html>
