@@ -21,8 +21,11 @@
   </style>
   <body>
     <h1>Clousers in JS</h1>
+    <button id="orange">Orange</button>
+    <button id="green">Green</button>
   </body>
   <script>
+    // lexical scope
     function outerFunction() { //
         let outerVariable = 'I am outside!'; // outer scope
 
@@ -37,6 +40,32 @@
         // console.log(innerVariable); // ReferenceError: innerVariable is not defined
       }
 
-    outerFunction();
+    // outerFunction();
+
+    // closure example
+
+    function makeFunc(){
+        const username = "MDN"
+        function displayName(){
+            console.log("Username Inner: " + username); // lexical scope
+        }
+        console.log("Username Outer: " + username)
+        return displayName;
+    }
+
+    // const myFunc = makeFunc();
+    // myFunc();
+
+    // closure example 2
+
+    function clickHandler(color){
+        return function(){
+            document.body.style.backgroundColor = `${color}`;
+        }
+        // document.body.style.backgroundColor = color;
+    }
+
+    document.getElementById('orange').onclick = clickHandler('orange');
+    document.getElementById('green').onclick = clickHandler('green');
   </script>
 </html>
