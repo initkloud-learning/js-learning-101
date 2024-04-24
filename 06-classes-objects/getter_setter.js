@@ -35,7 +35,7 @@ ashish.password = "newpass";
 console.log(ashish.password); // NEWPASS
 
 // Old way of doing it.
-// Object based approach
+// Function based approach
 function User2(email, password) {
   this._email = email;
   this._password = password;
